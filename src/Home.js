@@ -21,13 +21,14 @@ import Button from '@material-ui/core/Button';
 const homeStyles = makeStyles((theme) => ({
   main: {
     backgroundImage: `url(${bcg})`,
-    height: '100vh',
+    height: window.innerHeight,
     width: '100vw',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     position: 'relative',
-    fontFamily: 'Roboto'
+    fontFamily: 'Roboto',
+    overflow: 'hidden',
   },
   vs: {
     margin: 20,
@@ -36,7 +37,7 @@ const homeStyles = makeStyles((theme) => ({
   },
   buttonBar: {
     position: 'fixed',
-    bottom: 20,
+    top: `${window.innerHeight - 45}px`,
     left: 0,
     width: '100%',
     textAlign: 'center',

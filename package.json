@@ -5,19 +5,23 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --content-base dist/ --hot --history-api-fallback --open"
+    "dev": "webpack-dev-server --content-base dist/ --hot --history-api-fallback --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Colin McNamara",
   "license": "MIT",
+  "homepage": "http://coolinmc6.github.io/superfight",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.1",
-    "html-webpack-plugin": "^3.2.0",
     "@material-ui/core": "^4.9.3",
     "@material-ui/icons": "^4.9.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

@@ -78,8 +78,12 @@ const playerStyles = makeStyles((theme) => ({
     fontSize: 19,
     // backgroundColor: '#0984e3',
     padding: 2,
+    width: 'calc(100vw/2 - 100px)',
+    display: 'inline-block',
     [theme.breakpoints.down('sm')]: {
       fontSize: 17,
+      display: 'block',
+      width: '100%',
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: 15,
