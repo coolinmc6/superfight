@@ -4,7 +4,6 @@ import vs1 from './assets/images/VS.png'
 
 const vsStyles = makeStyles((theme) => ({
   root: {
-    padding: '15px 10px',
     position: 'absolute',
     boxSizing: 'border-box',
     textAlign: 'center',

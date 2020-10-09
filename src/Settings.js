@@ -9,15 +9,19 @@ const settingStyles = makeStyles((theme) => ({
     width: '100%',
     left: 0,
     [theme.breakpoints.down('sm')]: {
-      top: '80%',
+      top: '75%',
       padding: '0 20px',
       boxSizing: 'border-box',
     }
   },
   setting: {
-    fontSize: 25,
+    fontSize: 30,
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontFamily: `'Luckiest Guy', cursive`,
+    color: '#df2608',
+    [theme.breakpoints.up('md')]: {
+      fontSize: 35
+    }
   },
   mod: {
     fontSize: 18,

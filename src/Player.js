@@ -11,7 +11,8 @@ const playerStyles = makeStyles((theme) => ({
     position: 'absolute',
     top: '40%',
     transform: 'translateY(-50%)',
-    width: '50%',
+    width: 'calc(100vw/2 - 100px)',
+    boxSizing: 'border-box',
     [theme.breakpoints.down('sm')]: {
       transform: 'unset',
       top: '2%',
@@ -32,7 +33,7 @@ const playerStyles = makeStyles((theme) => ({
     paddingRight: 20,
     [theme.breakpoints.down('sm')]: {
       transform: 'unset',
-      top: '50%',
+      top: '47%',
     }
   },
   warrior: {
@@ -76,10 +77,7 @@ const playerStyles = makeStyles((theme) => ({
   },
   trait: {
     fontSize: 19,
-    // backgroundColor: '#0984e3',
     padding: 2,
-    width: 'calc(100vw/2 - 100px)',
-    display: 'inline-block',
     [theme.breakpoints.down('sm')]: {
       fontSize: 17,
       display: 'block',
