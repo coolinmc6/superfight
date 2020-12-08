@@ -4,7 +4,6 @@ const shuffle = (array) => array.sort(() => Math.random() -0.5).sort(() => Math.
 
 // random selection
 const getItems = ({ array, count }) => {
-
   const shuffled = shuffle(array);
   const nums = new Array(array.length).fill('').map((n, i) => i).sort(() => Math.random() - 0.5).slice(0, count);
 

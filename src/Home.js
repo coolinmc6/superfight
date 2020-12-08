@@ -4,6 +4,13 @@ import React, { useState, useEffect } from 'react';
 // Helpers
 import { getItems, titleCase } from './helpers';
 import { warriors, traits, modifications, settings } from './superfight';
+import CryptoJS from 'crypto-js'
+for(let i = 0; i < 10; i++) {
+  var hash = CryptoJS.SHA256(JSON.stringify([1,10,50]));
+  console.log(hash.toString(CryptoJS.enc.Base64))
+}
+
+console.log(warriors.length, traits.length)
 
 // Components
 import Player from './Player';
